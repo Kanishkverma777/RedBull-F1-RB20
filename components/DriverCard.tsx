@@ -32,7 +32,7 @@ export default function DriverCard({ driver, themeColor, delay = 0 }: { driver: 
         {driver.number}
       </div>
 
-      <div className="relative z-10 w-[60%]">
+      <div className="relative z-10 w-[85%] sm:w-[60%]">
         <div className="flex items-center gap-3 mb-4">
           <div
             className="w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold font-[var(--font-display)] text-white"
@@ -68,7 +68,7 @@ export default function DriverCard({ driver, themeColor, delay = 0 }: { driver: 
 
       {/* Driver Image */}
       {driver.imageUrl && (
-        <div className="absolute top-0 right-0 h-full w-2/3 opacity-80 mix-blend-screen pointer-events-none group-hover:opacity-100 transition-opacity duration-500 overflow-hidden">
+        <div className="absolute top-0 right-0 h-full w-[90%] sm:w-2/3 opacity-80 mix-blend-screen pointer-events-none group-hover:opacity-100 transition-opacity duration-500 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r from-[var(--background)] via-transparent to-transparent z-10" />
           <div className="absolute inset-0 bg-gradient-to-t from-[var(--background)] to-transparent z-10" />
           <Image

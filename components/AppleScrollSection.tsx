@@ -396,10 +396,10 @@ export default function AppleScrollSection() {
         {scrollSections.map((section, i) => {
           const positionClasses =
             section.position === 'left'
-              ? 'left-0 items-start text-left pl-8 sm:pl-12 lg:pl-20 pr-4 max-w-[45%] sm:max-w-[40%]'
+              ? 'left-0 items-start text-left pl-6 sm:pl-12 lg:pl-20 pr-4 max-w-[85%] sm:max-w-[50%] lg:max-w-[40%]'
               : section.position === 'right'
-              ? 'right-0 items-end text-right pr-8 sm:pr-12 lg:pr-20 pl-4 max-w-[45%] sm:max-w-[40%]'
-              : 'left-0 right-0 items-center text-center px-8';
+              ? 'right-0 items-end text-right pr-6 sm:pr-12 lg:pr-20 pl-4 max-w-[85%] sm:max-w-[50%] lg:max-w-[40%]'
+              : 'left-0 right-0 items-center text-center px-6 sm:px-8';
 
           return (
             <div

@@ -55,7 +55,7 @@ export default function StatsGrid({ stats, themeColor }: { stats: StatItem[]; th
 
   return (
     <div ref={ref} className="max-w-6xl mx-auto px-6 lg:px-8 py-16 lg:py-24">
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
         {stats.map((stat, i) => (
           <motion.div
             key={stat.label}
